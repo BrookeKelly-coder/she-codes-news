@@ -11,5 +11,5 @@ class NewsStory(models.Model):
     content = models.TextField()
     image = models.CharField(max_length=300, null=True)
 
-class Meta:
-    ordering = ['pub_date']
+    class Meta:
+        ordering = ['pub_date']
